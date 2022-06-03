@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Home | Lupis' Lair</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="assets/images/lupisnewlogow.png" type="image/x-icon">
+
+        <meta data-n-head="ssr" data-hid="description" content="Furry, Streamer, All-Time Nerd. Welcome to my website!">
+        <meta data-n-head="ssr" data-hid="ip-description" itemprop="description" content="Furry, Streamer, All-Time Nerd. Welcome to my website!">
+        <meta data-n-head="ssr" data-hid="ip-name" itemprop="name" content="Home | Lupis' Lair">
+        <meta data-n-head="ssr" data-hid="ip-image" itemprop="image" content="/assets/images/embed.png">
+        <meta data-n-head="ssr" data-hid="og-sitename" property="og:site_name" content="Lupis">
+        <meta data-n-head="ssr" data-hid="og-title" property="og:title" content="Home | Lupis' Lair">
+        <meta data-n-head="ssr" data-hid="og-type" property="og:type" content="website">
+        <meta data-n-head="ssr" data-hid="og-description" property="og:description" content="Furry, Streamer, All-Time Nerd. Welcome to my website!">
+        <meta data-n-head="ssr" data-hid="image" name="name" property="og:image" content="/assets/images/embed.png">
+        <meta data-n-head="ssr" data-hid="og-url" property="og:url" content="https://lupis.ga/wos">
+        <meta data-n-head="ssr" data-hid="twitter-card" name="twitter:card" content="summary_large_image">
+        <meta data-n-head="ssr" data-hid="twitter-url" name="twitter:url" content="https://lupis.ga/wos">
+        <meta data-n-head="ssr" data-hid="twitter-title" name="twitter:title" content="Home | Lupis' Lair">
+        <meta data-n-head="ssr" data-hid="twitter-description" name="twitter:description" content="Furry, Streamer, All-Time Nerd. Welcome to my website!">
+        <meta data-n-head="ssr" data-hid="twitter-image" name="twitter:image" content="/assets/images/embed.png">
+        <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#2B1055">
+
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <a href="#" class="logo"><img src="assets/images/lupisnewlogow.png" alt="Lupis" style="height: 3rem;"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+
+        </header>
+
+        <section>
+
+            <img src="assets/images/stars.png" id="stars">
+            <img src="assets/images/moon.png" id="moon">
+            <img src="assets/images/mountains_behind.png" id="mountains_behind">
+            <a id="btn">Furry, Streamer, All-Time Nerd</a>
+            <img src="assets/images/mountains_front.png" id="mountains_front">
+            <h2 id="title">I'm Lupis!</h2>
+
+
+        </section>
+        
+        <div class="sec" id="sec">
+            <p>© Copyright 2022 Lupis - All Rights Reserved</p>      
+
+        </div>
+
+        <script>
+
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let title = document.getElementById('title')
+            let btn = document.getElementById('btn')
+
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 0.5 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                title.style.marginBottom = value * 1 + 'px';
+                btn.style.marginBottom = value * 0.8 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+
+
+        </script> 
+
+    </body>
+</html>

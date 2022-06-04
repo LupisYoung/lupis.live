@@ -135,13 +135,40 @@ section img#moon
     display: inline-block;
     padding: 8px 30px;
     color: #fff;
+    text-align: center;
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(130px);
 
 }
 
-.sec
+.text
+{
+
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+
+}
+
+.text h2
+{
+
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.text p
+{
+
+    font-size: 1.2em;
+    color: #fff;
+
+}
+
+.footer
 {
 
     position: relative;
@@ -150,19 +177,18 @@ section img#moon
 
 }
 
-.sec .social
+.footer .social
 {
 
     text-align: center;
-    color: #fff;
     padding-bottom: 25px;
 
 }
 
-.sec .social a
+.footer .social a
 {
 
-    color: inherit;
+    color: #fff;
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -173,7 +199,7 @@ section img#moon
 
 }
 
-.sec .social a:hover
+.footer .social a:hover
 {
 
     background: #fff;
@@ -181,7 +207,7 @@ section img#moon
 
 }
 
-.sec .copyright
+.footer .copyright
 {
 
     font-size: 1em;

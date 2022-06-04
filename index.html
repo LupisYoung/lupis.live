@@ -4,6 +4,7 @@
     <head>
 
         <title>Home | Lupis' Lair</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="assets/images/lupisnewlogow.png" type="image/x-icon">
@@ -78,7 +79,6 @@
 
         <script>
 
-            let stars = document.getElementById('stars');
             let moon = document.getElementById('moon');
             let mountains_behind = document.getElementById('mountains_behind');
             let mountains_front = document.getElementById('mountains_front');
@@ -90,7 +90,6 @@
             window.addEventListener('scroll', function(){
 
                 let value = window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
                 moon.style.top = value * 0.5 + 'px';
                 mountains_behind.style.top = value * 0 + 'px';
                 mountains_front.style.top = value * 0 + 'px';

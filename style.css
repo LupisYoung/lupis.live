@@ -107,6 +107,7 @@ section img
     object-fit: cover;
     pointer-events: none;
     z-index: 1;
+    overflow-x: hidden;
 
 }
 

@@ -41,7 +41,7 @@
             <img src="assets/images/stars.png" id="stars">
             <img src="assets/images/moon.png" id="moon">
             <img src="assets/images/mountains_behind.png" id="mountains_behind">
-            <a id="btn">Page under construction</a>
+            <a id="btn"></a>
             <img src="assets/images/mountains_front.png" id="mountains_front">
             <h2 id="title">I'm Lupis!</h2>
 
@@ -72,7 +72,7 @@
             let mountains_behind = document.getElementById('mountains_behind');
             let mountains_front = document.getElementById('mountains_front');
             let title = document.getElementById('title')
-            let btn = document.getElementById('btn')
+            let btn = document.getElementById('btn').innerHTML = randomText();
 
             let header = document.querySelector('header')
 
@@ -91,6 +91,20 @@
                 btn.style.opacity = 100 - value * 0.2 + '%';
 
             })
+
+            function randomText() {
+                var randomtxt=[
+                    'Page under Construction!',
+                    'ya like jazz?',
+                    'Why are you here?',
+                    '404 Not Found',
+                    'My real name is Justin',
+                    `!sipuL m'I`,
+                    'Check out my <a href="https://twitter.com/LupisYoung">Twitter</a>',
+                    'Did you know this page is <a href="https://github.com/LupisYoung/lupis.live">open-source</a>?'
+                ];
+            return randomtxt[Math.floor((Math.random() * 3.99))];
+    }
 
 
         </script> 

@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;	
+}
+
+body
+{	
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: #151515	
+}
+
+
+/* Main Page Header */
+
+header
+{	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;	
+}
+
+
+/* Imprint Header */
+
+headerimp
+{	
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+    background-color: #151515;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;	
+}
+
+
+/* Main Page Hero Section */
+
+section
+{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section::before
+{
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #151515, transparent);
+    z-index: 3;
+
+}
+
+section video
+{
+
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(50%);
+
+}
+
+#heading
+{
+
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+
+}
+
+#heading t
+{
+
+    background: linear-gradient(90deg, #AF2CFF, #6549FF, #AF2CFF, #6549FF);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 3s ease-in-out infinite;
+    -moz-animation: animated_text 3s ease-in-out infinite;
+    -webkit-animation: animated_text 3s ease-in-out infinite;
+
+}
+
+@keyframes animated_text {
+
+    0% { background-position: 0px 50%; }
+    100% {background-position: 100% 50%; }
+    
+}
+
+#subhead
+{
+
+    position: absolute;
+    display: inline-block;
+    padding: 8px 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(45vh);
+
+}
+
+
+/* Main Page About Me */
+
+.text
+{
+
+    position: relative;
+    background: #151515;
+
+}
+
+.text h2
+{
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.text .container
+{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 60px;
+    background-color: #151515;
+    z-index: 1;
+
+}
+
+.text .container .question-a
+{
+
+    position: relative;
+    margin-right: 20px;
+    color: #fff;
+
+}
+
+.text .container .question-a p
+{
+
+    font-size: 1.2em;
+
+}
+
+.text .container .question-a h3
+{
+
+    font-size: 2em;
+
+}
+
+.text .container .question-b
+{
+
+    position: relative;
+    margin-left: 20px;
+    color: #fff;
+
+}
+
+.text .container .question-b p
+{
+
+    font-size: 1.2em;
+
+}
+
+.text .container .question-b h3
+{
+
+    font-size: 2em;
+
+}
+
+
+
+/* Main Page Projects */
+
+.projects
+{
+
+    position: relative;
+    background: #151515;
+
+}
+
+.projects h2
+{
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.projects p
+{
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #fff;
+
+}
+
+.projects .container
+{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #151515;
+    z-index: 1;
+
+}
+
+.projects .container img#wos
+{
+
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* Imprint CSS */
+
+.impressum
+{
+
+    margin: 0 40px;
+    background-color: #151515;
+    z-index: 1;
+
+}
+
+.impressum h1
+{
+
+    color: #fff;
+    text-align: left;
+
+}
+
+.impressum p
+{
+
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+
+}
+
+
+/* Global Footer */
+
+.footer
+{
+
+    position: relative;
+    padding: 40px;
+    background: #151515;
+
+}
+
+.footer .social
+{
+
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+.footer .social a
+{
+
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 30%;
+    transition: 0.3s;
+
+}
+
+.footer .social a:hover
+{
+
+    background: #fff;
+    border-radius: 50%;
+    color: #151515;
+
+}
+
+.footer .copyright
+{
+
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+
+
+}

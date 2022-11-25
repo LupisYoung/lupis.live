@@ -7,13 +7,30 @@
 		<link rel="stylesheet" type="text/css" href="assets/styles/wos.css">
 		<link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+		<meta data-n-head="ssr" data-hid="description" content="Week of Streams: Season 3 - Back and better than ever!">
+		<meta data-n-head="ssr" data-hid="ip-description" itemprop="description" content="Week of Streams: Season 3 - Back and better than ever!">
+		<meta data-n-head="ssr" data-hid="ip-name" itemprop="name" content="Week of Streams: Season 3 | Lupis">
+		<meta data-n-head="ssr" data-hid="ip-image" itemprop="image" content="/assets/images/wos/banner.png">
+		<meta data-n-head="ssr" data-hid="og-sitename" property="og:site_name" content="Lupis">
+		<meta data-n-head="ssr" data-hid="og-title" property="og:title" content="Week of Streams: Season 3 | Lupis">
+		<meta data-n-head="ssr" data-hid="og-type" property="og:type" content="website">
+		<meta data-n-head="ssr" data-hid="og-description" property="og:description" content="Week of Streams: Season 3 - Back and better than ever!">
+		<meta data-n-head="ssr" data-hid="image" name="name" property="og:image" content="/assets/images/wos/banner.png">
+		<meta data-n-head="ssr" data-hid="og-url" property="og:url" content="https://lupis.live/wos">
+		<meta data-n-head="ssr" data-hid="twitter-card" name="twitter:card" content="summary_large_image">
+		<meta data-n-head="ssr" data-hid="twitter-url" name="twitter:url" content="https://lupis.live/wos">
+		<meta data-n-head="ssr" data-hid="twitter-title" name="twitter:title" content="Week of Streams: Season 3 | Lupis">
+		<meta data-n-head="ssr" data-hid="twitter-description" name="twitter:description" content="Week of Streams: Season 3 - Back and better than ever!">
+		<meta data-n-head="ssr" data-hid="twitter-image" name="twitter:image" content="/assets/images/wos/banner.png">
+		<meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#AF2CFF">
 	
 	</head>
 	
 	<body>
 	
 		<header>
-		
+
 			<a href="https://lupis.live/wos" class="logo">
 				<img src="assets/images/wos/logo.png" alt="Logo" style="height: 3rem;">
 			</a>
@@ -27,49 +44,28 @@
 		<section>
 		
 			::before
-			<video autoplay muted loop>
-				<source src="assets/images/wos/bg.mp4" type="video/mp4" id="hero-bg" />
-			  </video>
-			<h1 id="heading">Week of Streams: <t>Season 3</t></h1>
-			<a id="subhead">&#9660;</a>
+			::after
+			<img src="assets/images/wos/bg.png" id="hero-bg">
+			<h1 id="heading">Week of Streams</h1>
+			<a id="subhead">is going <b>Season 3</b>!</a>
 		
 		</section>
 
 		<div class="text" id="text">
 
-            <h2>Questions about the event:</h2>
-
-			<div class="container">
-
-				<div class="question-a">
-
-					<h3>What is Week of Streams?</h3>
-					<p>Week of Streams is an annual event hosted by me where I stream every day for one week. It sounds very simple, but it's very special for me<br><br></p>
-					<h3>When is it happening?</h3>
-					<p>You can see the event date and the full schedule further below<br><br></p>
-					<h3>Where is it happening?</h3>
-					<p>As usual, the event will be hosted on my personal Twitch channel which you can find <a href="https://twitch.tv/lupisyoung">here</a>.<br>
-					Guests may also stream the event on their platform, which they are completely allowed to!</p>
-
-				</div>
-
-				<div class="question-b">
-
-					<h3>Will anyone else be joining?</h3>
-					<p>Of course there will be guests joining, but I won't say who will be or on which days they will be joining until the schedule has been published.<br><br></p>
-					<h3>Why am I here?</h3>
-					<p>I don't know, you clicked the link not me ¯\_(ツ)_/¯</p>
-
-				</div>
-
-        	</div>
+            <p>The annual Week of Streams extravaganza hosted by Lupis is coming back for Round 3 and is better than ever!<br>
+				For an entire week, you can watch Lupis play games, hang out with others, and have a great time every day. Of course, like every year before, there will be many friends and special guests.<br>
+				This year's event will take place from the 26th until the 30th of December, 2022, and will be hosted on the <a href="https://twitch.tv/LupisYoung">LupisYoung Twitch Channel</a>. Guests appearing in the event are free to stream their own perspective to their respective channels aswell.<br>
+				<br>
+				Interested in joining? You can contact me through <a href="https://twitter.com/LupisYoung">Twitter</a> or my <a href="https://lupis.live/discord">Discord Server</a> and we can figure something out together depending on availability. You can bring some friends too!<br>
+				<br>
+				See you soon!</p>
 
 		</div>
 
-		<div class="projects" id="projects">
+		<div class="schedule" id="schedule">
 
-            <h2>Event Schedule</h2>
-			<p>Hosted from 26th to 30th December, 2022</p>
+            <h2>Schedule</h2>
 
 			<div class="container">
 
@@ -101,7 +97,30 @@
  
 		 </div>
 
-		 <script src="assets/scripts/script.js"></script>
+		 <script>
+
+			let bg = document.getElementById('hero-bg')
+			let head = document.getElementById('heading')
+			let sub = document.getElementById('subhead')
+
+			let header = document.querySelector('header')
+
+			window.addEventListener('scroll', function(){
+
+
+    			let value = window.scrollY;
+
+    			header.style.top = - value * 0.08 + 'px';
+
+    			bg.style.opacity = 100 - value * 0.15 + '%';
+    			header.style.opacity = 100 - value * 0.15 + '%';
+
+    			sub.style.opacity = 100 - value * 0.3 + '%';
+				head.style.opacity = 100 - value * 0.3 + '%';
+
+			})
+
+		 </script>
 	
 	</body>
 

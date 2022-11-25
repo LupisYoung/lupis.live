@@ -32,23 +32,6 @@ header
 }
 
 
-/* Imprint Header */
-
-headerimp
-{	
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-    background-color: #151515;
-	padding: 30px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 10000;	
-}
-
-
 /* Main Page Hero Section */
 
 section
@@ -57,9 +40,8 @@ section
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 
 }
@@ -67,7 +49,8 @@ section
 section::before
 {
 
-    content: '';
+    content: ' ';
+    font-size: 0px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -77,16 +60,34 @@ section::before
 
 }
 
-section video
+section::after
 {
 
-    object-fit: cover;
+    content: ' ';
+    font-size: 0px;
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #AF2CFF, transparent);
+    z-index: 3;
+    transform: translateY(-650px);
+    filter: opacity(30%);
+
+}
+
+section img
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
     z-index: 1;
-    filter: brightness(50%);
+    overflow-x: hidden;
 
 }
 
@@ -98,19 +99,36 @@ section video
     white-space: nowrap;
     font-size: 5vw;
     z-index: 9;
+    padding-left: 6vw;
+    pointer-events: none;
 
 }
 
-#heading t
+#subhead
+{
+
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding-left: 6vw;
+    font-size: 2vw;
+    z-index: 9;
+    pointer-events: none;
+    transform: translateY(60px);
+
+}
+
+#subhead b
 {
 
     background: linear-gradient(90deg, #AF2CFF, #6549FF, #AF2CFF, #6549FF);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animated_text 3s ease-in-out infinite;
-    -moz-animation: animated_text 3s ease-in-out infinite;
-    -webkit-animation: animated_text 3s ease-in-out infinite;
+    animation: animated_text 3s linear infinite;
+    -moz-animation: animated_text 3s linear infinite;
+    -webkit-animation: animated_text 3s linear infinite;
 
 }
 
@@ -121,20 +139,6 @@ section video
     
 }
 
-#subhead
-{
-
-    position: absolute;
-    display: inline-block;
-    padding: 8px 30px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-    z-index: 9;
-    transform: translateY(45vh);
-
-}
-
 
 /* Main Page About Me */
 
@@ -142,87 +146,36 @@ section video
 {
 
     position: relative;
-    background: #151515;
+    width: 100%;
 
 }
 
-.text h2
+.text p
 {
 
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5em;
+	display: inline-block;
+    text-align: left;
+    font-size: 1.4em;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-left: 6vw;
+    margin-right: 6vw;
     color: #fff;
 
 }
 
-.text .container
+.text a
 {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 60px;
-    background-color: #151515;
-    z-index: 1;
+    font-weight: bold;
+    color: #AF2CFF;
 
 }
-
-.text .container .question-a
-{
-
-    position: relative;
-    margin-right: 20px;
-    color: #fff;
-
-}
-
-.text .container .question-a p
-{
-
-    font-size: 1.2em;
-
-}
-
-.text .container .question-a h3
-{
-
-    font-size: 2em;
-
-}
-
-.text .container .question-b
-{
-
-    position: relative;
-    margin-left: 20px;
-    color: #fff;
-
-}
-
-.text .container .question-b p
-{
-
-    font-size: 1.2em;
-
-}
-
-.text .container .question-b h3
-{
-
-    font-size: 2em;
-
-}
-
 
 
 /* Main Page Projects */
 
-.projects
+.schedule
 {
 
     position: relative;
@@ -230,32 +183,19 @@ section video
 
 }
 
-.projects h2
+.schedule h2
 {
 
 	display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3.5em;
-    margin-top: 100px;
     margin-bottom: 20px;
     color: #fff;
 
 }
 
-.projects p
-{
-
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    margin-bottom: 50px;
-    color: #fff;
-
-}
-
-.projects .container
+.schedule .container
 {
 
     display: flex;
@@ -264,47 +204,22 @@ section video
     justify-content: center;
     background-color: #151515;
     z-index: 1;
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
-.projects .container img#wos
+.schedule .container img#wos
 {
 
     position: relative;
     align-self: center;
     width: 100%;
     height: 100%;
+    border-radius: 25px;
 
 }
 
-
-/* Imprint CSS */
-
-.impressum
-{
-
-    margin: 0 40px;
-    background-color: #151515;
-    z-index: 1;
-
-}
-
-.impressum h1
-{
-
-    color: #fff;
-    text-align: left;
-
-}
-
-.impressum p
-{
-
-    font-size: 1.2em;
-    color: #fff;
-    text-align: left;
-
-}
 
 
 /* Global Footer */

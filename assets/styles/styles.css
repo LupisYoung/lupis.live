@@ -32,23 +32,6 @@ header
 }
 
 
-/* Imprint Header */
-
-headerimp
-{	
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-    background-color: #151515;
-	padding: 30px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 10000;	
-}
-
-
 /* Main Page Hero Section */
 
 section
@@ -88,7 +71,7 @@ section img
     object-fit: cover;
     pointer-events: none;
     z-index: 1;
-	filter: brightness(50%);
+	filter: brightness(70%);
     overflow-x: hidden;
 
 }
@@ -107,13 +90,13 @@ section img
 #heading t
 {
 
-    background: linear-gradient(90deg, #06b5fa, #e0406e, #06b5fa, #e0406e);
+    background: linear-gradient(90deg, #6B009B, #B00D64, #6B009B, #B00D64);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animated_text 3s ease-in-out infinite;
-    -moz-animation: animated_text 3s ease-in-out infinite;
-    -webkit-animation: animated_text 3s ease-in-out infinite;
+    animation: animated_text 3s linear infinite;
+    -moz-animation: animated_text 3s linear infinite;
+    -webkit-animation: animated_text 3s linear infinite;
 
 }
 
@@ -138,6 +121,28 @@ section img
 
 }
 
+
+.promo
+{
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.promo a img
+{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+}
 
 /* Main Page About Me */
 

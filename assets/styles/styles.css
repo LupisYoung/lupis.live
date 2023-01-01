@@ -376,6 +376,13 @@ section img
 
 }
 
+.contact .social a#mastodon:hover
+{
+	
+    color: #6364FF;
+	
+}
+
 .contact .mail
 {
 

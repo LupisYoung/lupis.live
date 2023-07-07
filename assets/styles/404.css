@@ -10,10 +10,11 @@
 
 body
 {	
-	min-height: 100vh;
+	height: 100%;
 	overflow-x: hidden;
 	background: #151515	
 }
+
 
 .error
 {
@@ -23,7 +24,7 @@ body
 
 }
 
-.error p
+.error h2
 {
 
 	display: flex;
@@ -31,9 +32,23 @@ body
     align-items: center;
     font-size: 1.8em;
     margin-top: 100px;
-    color: #4d4d4d;
+    color: #cacaca;
+    text-align: center;
 
 }
+
+.error p
+{
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #4d4d4d;
+    text-align: center;
+
+}
+
 .error .container img#cri
 {
 
@@ -44,5 +59,37 @@ body
     margin-right: auto;
     width: 250px;
     height: 250px;
+
+}
+
+.error .button
+{
+
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+#home
+{
+
+    color: #cacaca;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 8px 30px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.3s;
+
+}
+
+#home:hover
+{
+
+    background: #cacaca;
+    color: #151515;
 
 }

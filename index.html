@@ -13,21 +13,62 @@
 	
 	<body>
 	
-		<header>
-		
-			<a href="/" class="logo">
-				<img src="assets/images/logo.png" id="logoimg" alt="Logo" style="height: 3rem;">
-			</a>
-			
-		</header>
-	
-		<section>
+		<section class="hero">
 
-			<img src="assets/images/bg.png" id="hero-bg">
-			<h1 id="heading">Under construction</h1>
-			<a id="subhead">© Copyright 2023 LupisYoung</a>
-		
+			<div class="main-width">
+
+				<header>
+
+					<div class="logo">
+
+						<img src="/assets/images/logo.png" alt="">
+
+					</div>
+
+				</header>
+
+				<div class="container">
+
+					<div class="hero-text">
+
+						<h3>Hi there!</h3>
+						<h1>I am <span class="input"></span></h1>
+						<p>amongst other things.<br>Thanks for checking me out!</p>
+
+						<div class="social">
+							<a href="https://www.facebook.com/JuLugo17/"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://twitter.com/smolwoofloop"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://twitch.tv/smolwoofloop"><i class="fa-brands fa-twitch"></i></a>
+						</div>
+
+					</div>
+
+					<div class="footer">
+
+						<p>© 2023 Lupis - All Rights Reserved.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
 		</section>
+
+		<script type="text/javascript" src="/scripts/index.js"></script>
+
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+		<script>
+			var typed = new Typed(".input", {
+				strings:["Lupis", "a Graphic Designer", "a Video Editor", "a Vocalist", "an IT Technician"],
+				typeSpeed: 70,
+				backSpeed: 60,
+				backDelay: 3000,
+				smartBackspace: true,
+				loop: true
+			})
+		</script>
 	
 	</body>
 

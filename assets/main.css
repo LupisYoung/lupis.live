@@ -377,7 +377,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.412);
 	font-family: 'CircularBold';
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
 	width: calc(100% + 0.3rem);
 	font-size: 1em;
 	line-height: 0.1;

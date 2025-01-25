@@ -30,6 +30,7 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
+	cursor: url('images/pointer.cur'), auto;
 }
 
 body:before {
@@ -323,6 +324,8 @@ body.is-instant:after {
 	max-width: 100%;
 	vertical-align: top;
 	width: inherit;
+	pointer-events: none;
+	user-select: none;
 }
 
 .image.full .frame {
@@ -381,6 +384,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: calc(100% + 0.3rem);
 	font-size: 1em;
 	line-height: 0.1;
+	user-select: none;
 }
 
 #text02 a {
@@ -400,6 +404,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-family: 'CircularBlack';
 	font-size: 3.7em;
 	line-height: 1;
+	user-select: none;
 }
 
 #text03 a {
@@ -419,6 +424,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-family: 'CircularBook';
 	font-size: 1em;
 	line-height: 1.75;
+	user-select: none;
 }
 
 #text01 a {
@@ -434,7 +440,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 .buttons {
-	cursor: default;
 	display: flex;
 	justify-content: var(--flex-alignment);
 	letter-spacing: 0;
@@ -528,6 +533,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	background-color: #9146FF;
 	color: #FFFFFF;
 	background-image: linear-gradient(206deg, #B685FF 0%, rgba(145,70,255,0.008) 100%);
+	cursor: url('images/link.cur'), auto;
 }
 
 #buttons01 .n02 svg {
@@ -538,6 +544,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	background-color: #1DA1F2;
 	color: #FFFFFF;
 	background-image: linear-gradient(206deg, #71BFF0 0%, rgba(29,161,242,0.008) 100%);
+	cursor: url('images/link.cur'), auto;
 }
 
 #buttons01 .n03 svg {
@@ -548,6 +555,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	background-color: #5865F2;
 	color: #FFFFFF;
 	background-image: linear-gradient(206deg, #7C86F2 0%, rgba(88,101,242,0.008) 100%);
+	cursor: url('images/link.cur'), auto;
 }
 
 #buttons01 .n04 svg {
@@ -558,6 +566,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	background-color: #FF0000;
 	color: #FFFFFF;
 	background-image: linear-gradient(206deg, #FF5C5C 0%, rgba(255,0,0,0.008) 100%);
+	cursor: url('images/link.cur'), auto;
 }
 
 .container {
